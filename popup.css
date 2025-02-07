@@ -1,0 +1,40 @@
+body {
+    font-family: Arial, sans-serif;
+    width: 300px;
+    padding: 10px;
+    text-align: center;
+}
+
+h2 {
+    color: #ff5733;
+}
+
+input {
+    width: 80%;
+    padding: 5px;
+    margin: 10px 0;
+}
+
+button {
+    padding: 8px;
+    background-color: #ff5733;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#results {
+    margin-top: 10px;
+}
+
+.restaurant {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin: 5px 0;
+    text-align: left;
+}
+
+.restaurant img {
+    width: 100%;
+    height: auto;
+}

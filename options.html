@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foodie Finder Settings</title>
+    <link rel="stylesheet" href="options.css">
+</head>
+<body>
+    <h2>Foodie Finder Settings</h2>
+
+    <label for="default-location">Default Location:</label>
+    <input type="text" id="default-location" placeholder="Enter your city">
+
+    <label for="cuisine-type">Preferred Cuisine:</label>
+    <select id="cuisine-type">
+        <option value="all">All</option>
+        <option value="italian">Italian</option>
+        <option value="sushi">Sushi</option>
+        <option value="vegan">Vegan</option>
+        <option value="mexican">Mexican</option>
+        <option value="indian">Indian</option>
+    </select>
+
+    <label for="max-results">Max Results:</label>
+    <input type="number" id="max-results" min="1" max="10" value="5">
+
+    <button id="save">Save Preferences</button>
+    <p id="status"></p>
+
+    <script src="options.js"></script>
+</body>
+</html>
