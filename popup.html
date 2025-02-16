@@ -7,10 +7,32 @@
     <link rel="stylesheet" href="popup.css">
 </head>
 <body>
-    <h2>Foodie Finder</h2>
-    <input type="text" id="location" placeholder="Enter location (e.g., New York)">
-    <button id="search">Find Restaurants</button>
-    <div id="results"></div>
+    <div class="container">
+        <h1>FOODIE FINDER</h1>
+
+        <button id="new-suggestion">try something new</button>
+
+        <div class="search-container">
+            <label for="search">search by...</label>
+            <select id="search">
+                <option value="location">Location</option>
+                <option value="cuisine">Cuisine</option>
+                <option value="rating">Ratings</option>
+                <option value="trending">Trending</option>
+            </select>
+        </div>
+
+        <h2>trending now</h2>
+
+        <div class="restaurant-card">
+            <img src="images/tacos.jpg" alt="Tacos El Patron">
+            <div class="info">
+                <h3>Tacos El Patron</h3>
+                <span class="rating">⭐ 4.9/5</span>
+            </div>
+        </div>
+    </div>
+
     <script src="popup.js"></script>
 </body>
 </html>

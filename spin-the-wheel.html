@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spin the Wheel</title>
+    <link rel="stylesheet" href="spin-the-wheel.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Try Something New</h1>
+
+        <label for="new-food">What have you never tried before?</label>
+        <select id="new-food">
+            <option value="sushi">Sushi</option>
+            <option value="ethiopian">Ethiopian</option>
+            <option value="indian">Indian</option>
+            <option value="thai">Thai</option>
+            <option value="mexican">Mexican</option>
+            <option value="korean">Korean</option>
+            <option value="bbq">BBQ</option>
+        </select>
+
+        <label>Feeling adventurous?</label>
+        <button id="adventure-yes">YES</button>
+        <button id="adventure-no">NO</button>
+
+        <label for="vibe">What's the VIBE?</label>
+        <input type="text" id="vibe" placeholder="Cozy, Trendy, Romantic...">
+
+        <label for="spice-level">What's your spice level?</label>
+        <select id="spice-level">
+            <option value="1">1 - Mild</option>
+            <option value="2">2 - Medium</option>
+            <option value="3">3 - Spicy</option>
+            <option value="4">4 - Extra Spicy</option>
+        </select>
+
+        <label for="casual-elegant">Casual Eats or Elegant Dining?</label>
+        <input type="range" id="casual-elegant" min="0" max="10">
+
+        <h2>SPIN THE WHEEL</h2>
+        <div id="wheel-container">
+            <canvas id="wheel"></canvas>
+            <button id="spin">Spin</button>
+        </div>
+
+        <button id="push">PUSH</button>
+    </div>
+
+    <script src="spin-the-wheel.js"></script>
+</body>
+</html>

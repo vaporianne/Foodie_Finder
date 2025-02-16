@@ -1,40 +1,69 @@
 body {
     font-family: Arial, sans-serif;
-    width: 300px;
-    padding: 10px;
+    background-color: #6d8c66;
+    width: 320px;
+    padding: 15px;
     text-align: center;
 }
 
-h2 {
-    color: #ff5733;
-}
-
-input {
-    width: 80%;
-    padding: 5px;
-    margin: 10px 0;
+h1 {
+    font-size: 22px;
+    font-weight: bold;
+    color: #1d3a1e;
 }
 
 button {
-    padding: 8px;
-    background-color: #ff5733;
+    background-color: #4a6b46;
     color: white;
-    border: none;
-    cursor: pointer;
-}
-
-#results {
-    margin-top: 10px;
-}
-
-.restaurant {
-    border: 1px solid #ddd;
     padding: 10px;
-    margin: 5px 0;
-    text-align: left;
+    width: 90%;
+    border: none;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    margin: 10px 0;
 }
 
-.restaurant img {
+.search-container {
+    background-color: white;
+    padding: 8px;
+    width: 90%;
+    margin: 10px auto;
+    border-radius: 5px;
+}
+
+select {
     width: 100%;
-    height: auto;
+    padding: 8px;
+    font-size: 14px;
+}
+
+h2 {
+    font-size: 18px;
+    font-weight: bold;
+    color: #3e5a3f;
+    margin: 15px 0;
+}
+
+.restaurant-card {
+    background-color: white;
+    padding: 10px;
+    text-align: left;
+    border-radius: 5px;
+}
+
+.restaurant-card img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.restaurant-card .info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.rating {
+    font-weight: bold;
+    color: #ffcc00;
 }
