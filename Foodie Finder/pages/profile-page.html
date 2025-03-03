@@ -1,0 +1,26 @@
+<!-- Profile Page -->
+<div id="profile-page" class="hidden">
+    <h1>Profile</h1>
+    <p>Customize your search criteria for better recommendations.</p>
+    
+    <label for="location">Location:</label>
+    <input type="text" id="location" placeholder="Enter your city">
+    
+    <label for="allergies">Allergies and Dietary Preferences:</label>
+    <input type="text" id="allergies" placeholder="e.g., Nuts, Dairy, Vegetarian">
+    
+    <label for="child-friendly">Child-Friendly:</label>
+    <select id="child-friendly">
+        <option value="true">Yes</option>
+        <option value="false">No</option>
+    </select>
+    
+    <button id="save-profile">Save Profile</button>
+    
+    <p><strong>Saved Profile:</strong></p>
+    <p><strong>Location:</strong> <span id="saved-location">Not set</span></p>
+    <p><strong>Allergies and Dietary Preferences:</strong> <span id="saved-allergies">None</span></p>
+    <p><strong>Child-Friendly:</strong> <span id="saved-child-friendly">Not set</span></p>
+    
+    <button class="nav-btn" data-target="home-page">Return Home</button>
+</div>

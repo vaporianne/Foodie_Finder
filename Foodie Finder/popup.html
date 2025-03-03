@@ -1,0 +1,93 @@
+<!-- popup.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foodie Finder</title>
+    <link rel="stylesheet" href="styles/global.css">
+    <script defer src="scripts/navigation.js"></script>
+    <script defer src="scripts/try.js"></script>
+    <script defer src="scripts/search.js"></script>
+    <script defer src="scripts/reservations.js"></script>
+    <script defer src="scripts/profile.js"></script>
+    <script defer src="scripts/party.js"></script>
+</head>
+<body>
+    <div id="home-page">
+        <h1>FOODIE FINDER</h1>
+        <button class="nav-btn" data-target="try-page">Try Something New</button>
+        <button class="nav-btn" data-target="search-page">Search</button>
+        <button class="nav-btn" data-target="reservations-page">My Reservations</button>
+        <button class="nav-btn" data-target="profile-page">Profile</button>
+        <button class="nav-btn" data-target="party-page">Start a Party!</button>
+    </div>
+
+    <div id="try-page" class="hidden">
+        <h1>Try Something New</h1>
+        <p>Join the monthly challenge! Try one new restaurant and one new bar.</p>
+        <label>
+            <input type="checkbox" id="restaurant-challenge"> Completed Restaurant Challenge
+        </label>
+        <br>
+        <label>
+            <input type="checkbox" id="bar-challenge"> Completed Bar Challenge
+        </label>
+        <p><strong>Your Forks:</strong> <span id="fork-count">0</span> 🍴</p>
+        <button class="nav-btn" data-target="home-page">Return Home</button>
+    </div>
+
+    <div id="search-page" class="hidden">
+        <h1>Search</h1>
+        <p>Specify your search criteria, then analyze the Yelp/Google Maps page open in your browser.</p>
+        <input type="text" placeholder="Enter cuisine, ambiance, dietary needs...">
+        <button>Analyze Page</button>
+        <p><strong>Results:</strong> Match score and criteria breakdown will appear here.</p>
+        <button class="nav-btn" data-target="home-page">Return Home</button>
+    </div>
+
+    <div id="reservations-page" class="hidden">
+        <h1>My Reservations</h1>
+        <p>Manage your reservations through OpenTable and Resy.</p>
+        <button class="opentable-btn">Go to OpenTable</button>
+        <button class="resy-btn">Go to Resy</button>
+        <button class="nav-btn" data-target="home-page">Return Home</button>
+    </div>
+
+    <div id="profile-page" class="hidden">
+        <h1>Profile</h1>
+        <p>Customize your search criteria for better recommendations.</p>
+        <label for="location">Location:</label>
+        <input type="text" id="location" placeholder="Enter your city">
+        <label for="allergies">Allergies:</label>
+        <input type="text" id="allergies" placeholder="e.g., Nuts, Dairy">
+        <label for="child-friendly">Child-Friendly:</label>
+        <select id="child-friendly">
+            <option value="true">Yes</option>
+            <option value="false">No</option>
+        </select>
+        <button id="save-profile">Save Profile</button>
+        <p><strong>Saved Profile:</strong></p>
+        <p><strong>Location:</strong> <span id="saved-location">Not set</span></p>
+        <p><strong>Allergies:</strong> <span id="saved-allergies">None</span></p>
+        <p><strong>Child-Friendly:</strong> <span id="saved-child-friendly">Not set</span></p>
+        <button class="nav-btn" data-target="home-page">Return Home</button>
+    </div>
+
+    <div id="party-page" class="hidden">
+        <h1>Start a Party! 🎉</h1>
+        <p>Fill in the details for your food adventure and generate a shareable invitation!</p>
+        <label for="occasion">Occasion:</label>
+        <input type="text" id="occasion" placeholder="e.g., Team Bonding">
+        <label for="restaurant">Restaurant:</label>
+        <input type="text" id="restaurant" placeholder="e.g., Restaurant Name">
+        <label for="time">Time:</label>
+        <input type="text" id="time" placeholder="e.g., 7:00 PM">
+        <button id="generate-invite">Generate Invitation</button>
+        <p><strong>Invitation:</strong></p>
+        <textarea id="invite-output" readonly></textarea>
+        <button id="copy-invite">📋 Copy Invitation</button>
+        <button class="nav-btn" data-target="home-page">Return Home</button>
+    </div>
+</body>
+</html>
