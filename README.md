@@ -1,7 +1,7 @@
 # IME403
 IME 403 Chrome Extension Project
 
-Download extension through Google Chrome Extension store or load on local machine
+Download extension through Google Chrome Extension store or load on local machine. Final version is in the "Foodie Finder" folder in the main branch. Enjoy :)
 
 - Home Page
 Navigate to 5 pages:
