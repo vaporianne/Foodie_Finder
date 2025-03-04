@@ -15,3 +15,6 @@ Navigate to 5 pages:
   Set your location, allergies/dietary preferences, and if you prefer kid-friendly spots. When you use the Search feature, it will remember these Profile preferences.
   - Start a Party!
   Specify an occasion, location, and time for a copy-paste invite that you can send to your friends and coworker on Teams/Slack/iMessage/etc.
+
+UPDATE 3/4
+- Foodie Finder does not collect any user personal data or information. All user data is store locally on the user's machine.
